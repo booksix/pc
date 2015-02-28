@@ -31,13 +31,13 @@
                                     <action selector="sendMailButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VEC-Pe-a8M"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCT-qt-SeT">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCT-qt-SeT">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="78" width="247" height="126"/>
+                                    <rect key="frame" x="16" y="125" width="247" height="79"/>
                                 </variation>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="InI-pW-W9c">
@@ -46,6 +46,15 @@
                                     <rect key="frame" x="277" y="78" width="80" height="80"/>
                                 </variation>
                             </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsn-yr-3lk">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="78" width="253" height="21"/>
+                                </variation>
+                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eQm-mp-eut">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -69,6 +78,7 @@
                                 <exclude reference="Xc8-30-qPM"/>
                                 <exclude reference="KCT-qt-SeT"/>
                                 <exclude reference="InI-pW-W9c"/>
+                                <exclude reference="nsn-yr-3lk"/>
                                 <exclude reference="eQm-mp-eut"/>
                                 <exclude reference="1Fb-6B-vzz"/>
                             </mask>
@@ -78,6 +88,7 @@
                                 <include reference="Xc8-30-qPM"/>
                                 <include reference="KCT-qt-SeT"/>
                                 <include reference="InI-pW-W9c"/>
+                                <include reference="nsn-yr-3lk"/>
                                 <include reference="eQm-mp-eut"/>
                                 <include reference="1Fb-6B-vzz"/>
                             </mask>
@@ -88,6 +99,7 @@
                         <outlet property="enterNameTextField" destination="eQm-mp-eut" id="so1-0g-D3z"/>
                         <outlet property="mailButton" destination="Xc8-30-qPM" id="icV-2w-1EF"/>
                         <outlet property="messageLabel" destination="KCT-qt-SeT" id="d02-ZA-XkH"/>
+                        <outlet property="nameLabel" destination="nsn-yr-3lk" id="2LC-1t-vTN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
